@@ -1,7 +1,5 @@
-
-const baseUrl = "http://localhost:8088/iplstats/api/v1";
+const baseUrl = "https://ipl-jun-stats.onrender.com/api/v1";
 google.charts.load('current', { 'packages': ['corechart'] });
-
 function showTeamNames() {
     const idShowTeamNames = document.getElementById("idShowTeamNames");
     getData(`${baseUrl}/team/names`).then(data => {
